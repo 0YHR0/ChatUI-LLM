@@ -1,0 +1,21 @@
+# Can choose from 'local' and 'remote':
+#   - 'local' requires fill in the Model_Name under Local_Deploy
+#   - 'remote' requires fill in the fields under Remote_API
+Mode: "local"
+
+Remote_API:
+  API_URL: "https://xxxx.xxxx.aws.endpoints.huggingface.cloud"
+  Headers:
+    Accept: "application/json"
+    Authorization: "Bearer xxxx"
+    Content-Type: "application/json"
+
+
+Local_Deploy:
+  Model_Name: "openai-community/gpt2"
+
+Parameters:
+  Top_k: 0
+  Top_p: 0.15
+  Temperature: 0.2
+  Max_New_Tokens: 512
